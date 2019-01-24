@@ -1,0 +1,8 @@
+<a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ event.name }}</h4>
+    <p class="list-group-item-text">{{ event.description }}</p>
+    <h6 class="list-group-item-text">{{event.date | date }}</h6>
+    <h6 class="list-group-item-text">{{ event.startTime | time }} - {{event.endTime | time}}</h6>
+  </div>
+</a>
